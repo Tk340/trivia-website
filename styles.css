@@ -96,7 +96,7 @@ a {
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 150px 0 0 0;
 }
 .title-bar h1 {
     margin: 0;
@@ -105,8 +105,8 @@ a {
 .quiz-card-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-top: 300px;
+    gap: 70px;
+    margin-top: 170px;
 }
 .quiz-card {
     background: #fff;

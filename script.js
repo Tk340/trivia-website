@@ -1,40 +1,54 @@
-const question = [
-    {
-        question: "What is the first month of the Islamic calendar?",
-        answers: [
-            { text: "Ramadan", correct: false },
-            { text: "Muharram", correct: true },
-            { text: "Shawwal", correct: false },
-            { text: "Dhu al-Hijjah", correct: false },
-        ]
-    },
-    {
-        question: "What was the capital city of the Islamic empire under the Umayyad dynasty?",
-        answers: [
-            { text: "Istanbul", correct: false },
-            { text: "Damascus", correct: true },
-            { text: "Medina", correct: false },
-            { text: "Mecca", correct: false },
-        ]    
-    }, 
-    {
+const questions = [
+    [
+        {
+            question: "What is the first month of the Islamic calendar?",
+            answers: [
+                { text: "Ramadan", correct: false },
+                { text: "Muharram", correct: true },
+                { text: "Shawwal", correct: false },
+                { text: "Dhu al-Hijjah", correct: false },
+            ]
+        },
+        {
+            question: "What was the capital city of the Islamic empire under the Umayyad dynasty?",
+            answers: [
+                { text: "Istanbul", correct: false },
+                { text: "Damascus", correct: true },
+                { text: "Medina", correct: false },
+                { text: "Mecca", correct: false },
+            ]    
+        }, 
+        {
+            question: "Which Islamic scholar is known for his contributions to medicine?",
+            answers: [
+                { text: "Ibn Sina (Avicenna)", correct: true },
+                { text: "Al-Khwarizmi", correct: false },
+                { text: "Al-Farabi", correct: false },
+                { text: "Ibn Khaldun", correct: false },
+            ]
+        }
+    ],
+    [   {
         question: "Which Islamic scholar is known for his contributions to medicine?",
         answers: [
             { text: "Ibn Sina (Avicenna)", correct: true },
             { text: "Al-Khwarizmi", correct: false },
             { text: "Al-Farabi", correct: false },
             { text: "Ibn Khaldun", correct: false },
-        ]
-    }
-  ];
+            ]
+        }
+    ]
+];
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer buttons");
 const nextButton = document.getElementById("nxt-button");
+let question;
 
 let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
+    question = questions[window.location.hash.replace("#", "") - 1] || questions[0];
     currentQuestionIndex = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
