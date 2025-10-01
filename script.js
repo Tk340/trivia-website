@@ -28,13 +28,14 @@ const questions = [
             ]
         }
     ],
-    [   {
-        question: "Which Islamic scholar is known for his contributions to medicine?",
-        answers: [
-            { text: "Ibn Sina (Avicenna)", correct: true },
-            { text: "Al-Khwarizmi", correct: false },
-            { text: "Al-Farabi", correct: false },
-            { text: "Ibn Khaldun", correct: false },
+    [   
+        {
+            question: "Which Islamic scholar is known for his contributions to medicine?",
+            answers: [
+                { text: "Ibn Sina (Avicenna)", correct: true },
+                { text: "Al-Khwarizmi", correct: false },
+                { text: "Al-Farabi", correct: false },
+                { text: "Ibn Khaldun", correct: false },
             ]
         }
     ]
