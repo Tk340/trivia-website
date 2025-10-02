@@ -242,9 +242,9 @@ const questions = [
         {
             question: "Which Surah does not begin with Bismillah?",
             answers: [
-                { text: "Naml", correct: true },
+                { text: "Naml", correct: false },
                 { text: "Baqara", correct: false },
-                { text: "Tawba", correct: false },
+                { text: "Tawba", correct: true },
                 { text: "Nur", correct: false },
             ]    
         },
@@ -437,6 +437,163 @@ const questions = [
                 { text: "Omar ibn al-Khattab", correct: false },
                 { text: "Zaid ibn Harithah", correct: false },
                 { text: "Abu Bakr", correct: false },
+            ]
+        },
+    ],
+    [
+        {
+            question: "What is the Capital of Canada?",
+            answers: [
+                { text: "Toronto", correct: false },
+                { text: "Ottawa", correct: true },
+                { text: "Vancouver", correct: false },
+                { text: "Montreal", correct: false },
+            ]
+        },
+        {
+            question: "Which country has Cairo as its capital? city",
+            answers: [
+                { text: "Morocco", correct: false },
+                { text: "Algeria", correct: false },
+                { text: "Egypt", correct: true },
+                { text: "Libya", correct: false },
+            ]    
+        }, 
+        {
+            question: "What is the Capital of France?",
+            answers: [
+                { text: "Berlin", correct: false },
+                { text: "Madrid", correct: false },
+                { text: "Paris", correct: true },
+                { text: "Rome", correct: false },
+            ]
+        },
+        {
+            question: "Which country's capital is Canberra?",
+            answers: [
+                { text: "New Zealand", correct: false },
+                { text: "Australia", correct: true },
+                { text: "Nigeria", correct: false },
+                { text: "South Africa", correct: false },
+            ]
+        },
+        {
+            question: "Which country has 3 capital cities?",
+            answers: [
+                { text: "South Africa", correct: true },
+                { text: "Australia", correct: false },
+                { text: "Nigeria", correct: false },
+                { text: "Canada", correct: false },
+            ]
+        },
+        {
+            question: "Ankara is the capital of which country?",
+            answers: [
+                { text: "Turkey", correct: true },
+                { text: "Greece", correct: false },
+                { text: "Egypt", correct: false },
+                { text: "Iran", correct: false },
+            ]
+        },
+        {
+            question: "Which European capital is known as the 'City of Bridges?'",
+            answers: [
+                { text: "Venice", correct: false },
+                { text: "Amsterdam", correct: false },
+                { text: "Prague", correct: true },
+                { text: "Budapest", correct: false },
+            ]
+        },
+        {
+            question: "What is the Capital of Brazil",
+            answers: [
+                { text: "Rio de Janeiro", correct: false },
+                { text: "Brasília", correct: true },
+                { text: "São Paulo", correct: false },
+                { text: "Salvador", correct: false },
+            ]
+        },
+        {
+            question: "Kathmandu is the capital of which country?",
+            answers: [
+                { text: "Bhutan", correct: false },
+                { text: "Nepal", correct: true },
+                { text: "Bangladesh", correct: false },
+                { text: "Sri Lanka", correct: false },
+            ]
+        },
+        {
+            question: "What is the current Capital of Kazakhstan?",
+            answers: [
+                { text: "Almaty", correct: false },
+                { text: "Astana", correct: true },
+                { text: "Shymkent", correct: false },
+                { text: "Karaganda", correct: false },
+            ]
+        },
+        {
+            question: "Which country moved its capital from Dar es Salaam to Dodoma?",
+            answers: [
+                { text: "Kenya", correct: false },
+                { text: "Tanzania", correct: true },
+                { text: "Uganda", correct: false },
+                { text: "Rwanda", correct: false },
+            ]
+        },
+        {
+            question: "What is the oldest capital city in the world?",
+            answers: [
+                { text: "Cairo", correct: false },
+                { text: "Jerusalem", correct: false },
+                { text: "Athens", correct: false },
+                { text: "Damascus", correct: true },
+            ]
+        },
+        {
+            question: "Which capital city spans over 2 continents?",
+            answers: [
+                { text: "Istanbul", correct: true },
+                { text: "Ankara", correct: false },
+                { text: "Cairo", correct: false },
+                { text: "Athens", correct: false },
+            ]
+        },
+        {
+            question: "Timphu is the capital of which country?",
+            answers: [
+                { text: "Japan", correct: false },
+                { text: "Bhutan", correct: true },
+                { text: "Nepal", correct: false },
+                { text: "India", correct: false },
+            ]
+        },
+        {
+            question: "What is the Capital of Italy?",
+            answers: [
+                { text: "Milan", correct: false },
+                { text: "Venice", correct: false },
+                { text: "Rome", correct: true },
+                { text: "Florence", correct: false },
+            ]
+        },
+        {
+            question: "What is the southernmost capital city in the world?",
+            answers: [
+                { text: "Wellington", correct: true },
+                { text: "Canberra", correct: false },
+                { text: "Buenos Aires", correct: false },
+                { text: "Santiago", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which country won the first ever FIFA World Cup in 1930?",
+            answers: [
+                { text: "Brazil", correct: false },
+                { text: "Argentina", correct: false },
+                { text: "Uruguay", correct: true },
+                { text: "Italy", correct: false },
             ]
         },
     ]
