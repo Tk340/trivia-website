@@ -227,6 +227,218 @@ const questions = [
                 { text: "50", correct: false },
             ]
         }
+
+    ],
+    [   
+        {
+            question: "How many Surahs in the Quran are named after a Prophet?",
+            answers: [
+                { text: "5", correct: false },
+                { text: "6", correct: true },
+                { text: "7", correct: false },
+                { text: "8", correct: false },
+            ]
+        },
+        {
+            question: "Which Surah does not begin with Bismillah?",
+            answers: [
+                { text: "Naml", correct: true },
+                { text: "Baqara", correct: false },
+                { text: "Tawba", correct: false },
+                { text: "Nur", correct: false },
+            ]    
+        },
+        {
+            question: "Who is the man in the Quran with a preserved body as a warning for future generations?",
+            answers: [
+                { text: "Abu Lahab", correct: false },
+                { text: "Fir'aun (Pharaoh)", correct: true },
+                { text: "Samiri", correct: false },
+                { text: "Adam", correct: false },
+            ]
+        },
+        {
+            question: "In the Quran there is a mention of a Prophet who has been called by his mothers name. Who is he?",
+            answers: [
+                { text: "Ayyub (Job)", correct: false },
+                { text: "Maryam (Mary)", correct: false },
+                { text: "Muhammad (PBUH)", correct: false },
+                { text: "Isa (Jesus)", correct: true },
+            ]
+        },
+        {
+            question: "Which Surah of the Quran has Bismillah repeated twice?",
+            answers: [
+                { text: "Yasin", correct: false },
+                { text: "Tawba", correct: false },
+                { text: "An-Naml", correct: true },
+                { text: "Al-Ma'idah", correct: false },
+            ]
+        },
+        {
+            question: "Which Surah of the Quran is known as the heart of the Quran?",
+            answers: [
+                { text: "Yasin", correct: true },
+                { text: "Al-Fatiha", correct: false },
+                { text: "Al-Baqara", correct: false },
+                { text: "Al-Ikhlas", correct: false },
+            ]
+        },
+        {
+            question: "How many years did it take for the complete revelation of the Quran?",
+            answers: [
+                { text: "23", correct: true },
+                { text: "17", correct: false },
+                { text: "28", correct: false },
+                { text: "32", correct: false },
+            ]
+        },
+        {
+            question: "Omar ibn al-Khattab converted to Islam after hearing verses from which Surah?",
+            answers: [
+                { text: "Al-A'raf", correct: false },
+                { text: "Taha", correct: true },
+                { text: "Mu'minun", correct: false },
+                { text: "An-Nur", correct: false },
+            ]
+        },
+        {
+            question: "How many Surahs are in the Quran?",
+            answers: [
+                { text: "112", correct: false },
+                { text: "110", correct: false },
+                { text: "117", correct: false },
+                { text: "114", correct: true },
+            ]
+        },
+        {
+            question: "How many Ayahs have a sajdah (prostration) in the Quran?",
+            answers: [
+                { text: "14", correct: true },
+                { text: "15", correct: false },
+                { text: "16", correct: false },
+                { text: "17", correct: false },
+            ]
+        },
+        {
+            question: "Which Prophet is mentioned the most in the Quran?",
+            answers: [
+                { text: "Musa (Moses)", correct: true },
+                { text: "Ibrahim (Abraham)", correct: false },
+                { text: "Nuh (Noah)", correct: false },
+                { text: "Isa (Jesus)", correct: false },
+            ]
+        },
+    ],
+    [
+        {
+            question: "Where did Prophet Muhammad give his last Khutba (Sermon)'?",
+            answers: [
+                { text: "Masjid al-Haram", correct: false },
+                { text: "Arafat", correct: true },
+                { text: "Mina", correct: false },
+                { text: "Medina", correct: false },
+            ]
+        },
+        {
+            question: "What is the name of the mountain where Prophet Muhammad received his first revelation?",
+            answers: [
+                { text: "Mount Sinai", correct: false },
+                { text: "Mount Uhud", correct: false },
+                { text: "Mount Hira", correct: true },
+                { text: "Mount Arafat", correct: false },
+            ]
+        },
+        {
+            question: "Whats the name of Prophet Muhammads father",
+            answers: [
+                { text: "Abu Talib", correct: false },
+                { text: "Abdullah", correct: true },
+                { text: "Abu Lahab", correct: false },
+                { text: "Abu Sufyan", correct: false },
+            ]
+        },
+        {
+            question: "Who was the first person to accept Islam?",
+            answers: [
+                { text: "Khadijah", correct: true },
+                { text: "Abu Bakr", correct: false },
+                { text: "Ali", correct: false },
+                { text: "Umar", correct: false },
+            ]
+        },
+        {
+            question: "What was the name of the place where muslims would secretly meet in Mecca?",
+            answers: [
+                { text: "Masjid al-Haram", correct: false },
+                { text: "Dar al-Arqam", correct: true },
+                { text: "Masjid al-Nabawi", correct: false },
+                { text: "Masjid al-Aqsa", correct: false },
+            ]
+        },
+        {
+            question: "What was the first war between the Muslims and Quraysh?",
+            answers: [
+                { text: "Battle of Hunayn", correct: false },
+                { text: "Battle of Uhud", correct: false },
+                { text: "Battle of Khandaq", correct: false },
+                { text: "Battle of Badr", correct: true },
+            ]
+        }, 
+        {
+            question: "How old was the Prophet when his mother passed away?",
+            answers: [
+                { text: "6", correct: true },
+                { text: "5", correct: false },
+                { text: "4", correct: false },
+                { text: "3", correct: false },
+            ]
+        },
+        {
+            question: "Who named the Prophet Muhammad?",
+            answers: [
+                { text: "Khadijah", correct: false },
+                { text: "Amina", correct: false },
+                { text: "Abdul Muttalib", correct: true },
+                { text: "Abu Bakr", correct: false },
+            ]   
+        },
+        {
+            question: "What was the name of the Prophet's first wife?",
+            answers: [
+                { text: "Aisha", correct: false },
+                { text: "Hafsa", correct: false },
+                { text: "Khadijah", correct: true },
+                { text: "Zainab", correct: false },
+            ]
+        },
+        {
+            question: "What was the name of the first freed slave to embrace Islam?",
+            answers: [
+                { text: "Bilal ibn Rabah", correct: false },
+                { text: "Zayd ibn Harithah", correct: true },
+                { text: "Abu Bakr", correct: false },
+                { text: "Omar ibn al-Khattab", correct: false },
+            ]
+        },
+        {
+            question: "How old was Khadijah when she married the Prophet?",
+            answers: [
+                { text: "42", correct: false },
+                { text: "25", correct: false },
+                { text: "37", correct: false },
+                { text: "40", correct: true },
+            ]
+        },
+        {
+            question: "Who was the first Mu'azzin in Islam?",
+            answers: [
+                { text: "Bilal ibn Rabah", correct: true },
+                { text: "Omar ibn al-Khattab", correct: false },
+                { text: "Zaid ibn Harithah", correct: false },
+                { text: "Abu Bakr", correct: false },
+            ]
+        },
     ]
 ];
 const questionElement = document.getElementById("question");
