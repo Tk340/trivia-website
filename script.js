@@ -451,6 +451,7 @@ let score = 0;
 
 function startQuiz() {
     question = questions[window.location.hash.replace("#", "") - 1] || questions[0];
+    question.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
