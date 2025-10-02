@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #001e4d;
+    background: #001e1d;
 } 
 a {
     text-decoration: none;
@@ -91,7 +91,6 @@ a {
     opacity: 0.2;
 }
 .title-bar {
-    background-color: #001e4d;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -106,7 +105,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 70px;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 .quiz-card {
     background: #fff;
