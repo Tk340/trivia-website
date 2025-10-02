@@ -1,41 +1,230 @@
 const questions = [
     [
         {
-            question: "What is the first month of the Islamic calendar?",
+            question: "What year did the battle of Badr take place?",
             answers: [
-                { text: "Ramadan", correct: false },
-                { text: "Muharram", correct: true },
-                { text: "Shawwal", correct: false },
-                { text: "Dhu al-Hijjah", correct: false },
+                { text: "15th Ramadan, 2 AH", correct: false },
+                { text: "17th Ramadan, 2 AH", correct: true },
+                { text: "13th Ramadan, 2 AH", correct: false },
+                { text: "21st Ramadan, 2 AH", correct: false },
             ]
         },
         {
             question: "What was the capital city of the Islamic empire under the Umayyad dynasty?",
             answers: [
                 { text: "Istanbul", correct: false },
-                { text: "Damascus", correct: true },
                 { text: "Medina", correct: false },
+                { text: "Damascus", correct: true },
                 { text: "Mecca", correct: false },
             ]    
         }, 
         {
-            question: "Which Islamic scholar is known for his contributions to medicine?",
+            question: "Who was the first martyr in Islam?",
             answers: [
-                { text: "Ibn Sina (Avicenna)", correct: true },
+                { text: "Sumayyah bint Khayyat", correct: true },
+                { text: "Ali ibn Abi Talib", correct: false },
+                { text: "Hamza ibn Abdul-Muttalib", correct: false },
+                { text: "Ubayda ibn al-Harith", correct: false },
+            ]
+        }, 
+        {
+            question: "Who was the first Caliph of Islam?",
+            answers: [
+                { text: "Omar ibn al-Khattab", correct: false },
+                { text: "Ali ibn Abi Talib", correct: false },
+                { text: "Uthman ibn Affan", correct: false },
+                { text: "Abu Bakr", correct: true },
+            ]
+        },
+        {
+            question: "What was the name of the first Islamic Caliphate to rule after the Prophets death?",
+            answers: [
+                { text: "Rashidun Caliphate", correct: true },
+                { text: "Umayyad Caliphate", correct: false },
+                { text: "Abbasid Caliphate", correct: false },
+                { text: "Fatimid Caliphate", correct: false },
+            ]
+        },
+        {
+            question: "What major Islamic empire emerged in the 13th century and lasted till the 20th century?",
+            answers: [
+                    { text: "Rashidun Caliphate", correct: false},
+                    { text: "Ottoman Empire", correct: true },
+                { text: "Mughal Empire", correct: false },
+                { text: "Safavid Empire", correct: false },
+            ]
+        },
+        {
+            question: "What was the capital of the Ottoman Empire?",
+            answers: [
+                { text: "Istanbul", correct: true },
                 { text: "Al-Khwarizmi", correct: false },
+                { text: "Gaza", correct: false },
+                { text: "Damascus", correct: false },
+            ]
+        },
+        {
+            question: "How long did the Makkan phase last after the first revelation?",
+            answers: [
+                { text: "15 years", correct: false },
+                { text: "10 years", correct: false },
+                { text: "13 years", correct: true },
+                { text: "20 years", correct: false },
+            ]
+        },
+        {
+            question: "What was the name of the treaty that allowed Muslims to peacefully perform pilgrimage to Mecca?",
+            answers: [
+                { text: "Treaty of Hudaybiyyah", correct: true },
+                { text: "Treaty of Versailles", correct: false },   
+                { text: "Treaty of Medina", correct: false },
+                { text: "Treaty of Taif", correct: false },
+            ]
+        },
+        {
+            question: "Which Islamic scholar is known for his contributions to mathematics?",
+            answers: [
+                { text: "Ibn Sina (Avicenna)", correct: false },
+                { text: "Al-Khwarizmi", correct: true },
                 { text: "Al-Farabi", correct: false },
                 { text: "Ibn Khaldun", correct: false },
+            ]
+        },
+        {
+            question: "Who introduced the Islamic Calendar?",
+            answers: [
+                { text: "Abu Bakr", correct: false },
+                { text: "Omar ibn al-Khattab", correct: true },
+                { text: "Uthman ibn Affan", correct: false },
+                { text: "Ali ibn Abi Talib", correct: false },
+            ]
+        },
+        {
+            question: "How many muslims died in the battle of Badr",
+            answers: [
+                { text: "30", correct: false },
+                { text: "14", correct: true },
+                { text: "23", correct: false },
+                { text: "31", correct: false },
+            ]
+        },
+        {
+            question: "What was the name of the second most important battle in Islam?",
+            answers: [
+                { text: "Badr", correct: false },
+                { text: "Uhud", correct: true },
+                { text: "Hunayn", correct: false },
+                { text: "Tabuk", correct: false },
+            ]
+        },
+        {
+            question: "Where was the first qibla (direction of prayer) in Islam?",
+            answers: [
+                { text: "Syria", correct: false },
+                { text: "Mecca", correct: false },
+                { text: "Medina", correct: false },
+                { text: "Palestine", correct: true },
+            ]
+        },
+        {
+            question: "When did the battle of Uhud take place?,",
+            answers: [
+                { text: "5 AH", correct: false },
+                { text: "3 AH", correct: true },
+                { text: "4 AH", correct: false },
+                { text: "2 AH", correct: false },
             ]
         }
     ],
     [   
         {
-            question: "Which Islamic scholar is known for his contributions to medicine?",
+            question: "Which Prophet did Allah order to build an ark?",
             answers: [
-                { text: "Ibn Sina (Avicenna)", correct: true },
-                { text: "Al-Khwarizmi", correct: false },
-                { text: "Al-Farabi", correct: false },
-                { text: "Ibn Khaldun", correct: false },
+                { text: "Musa (Moses)", correct: false },
+                { text: "Nuh (Noah)", correct: true },
+                { text: "Ibrahim (Abraham)", correct: false },
+                { text: "Yusuf (Joseph)", correct: false },
+            ]
+        },
+        {
+            question: "Which Prophet is known for his ability to interpret dreams?",
+            answers: [
+                { text: "Yusuf (Joseph)", correct: true },
+                { text: "Sulaiman (Solomon)", correct: false },
+                { text: "Dawud (David)", correct: false },
+                { text: "Ibrahim (Abraham)", correct: false },
+            ]
+        },
+        {
+            question: "Which Prophet was swallowed by a big fish or whale?",
+            answers: [
+                { text: "Nuh (Noah)", correct: false },
+                { text: "Musa (Moses)", correct: false },
+                { text: "Yunus (Jonah)", correct: true },
+                { text: "Ibrahim (Abraham)", correct: false },
+            ]
+        },
+        {
+            question: "Name the Prophet with a staff who became a serpent and was able to part the sea?",
+            answers: [
+                { text: "Sulaiman (Solomon)", correct: false },
+                { text: "Dawud (David)", correct: false },
+                { text: "Ilyas (Elijah)", correct: false },
+                { text: "Musa (Moses)", correct: true },
+            ]
+        },
+        {
+            question: "Which nation was Prophet Hud sent to?",
+            answers: [
+                { text: "Thamud", correct: false },
+                { text: "Madyan", correct: false },
+                { text: "Bani Israel", correct: false },
+                { text: "Aad", correct: true },
+            ]
+        },
+        {
+            question: "Which Prophet had a great illness that affected his skin?",
+            answers: [
+                { text: "Musa (Moses)", correct: false },
+                { text: "Yunus (Jonah)", correct: false },
+                { text: "Ayyub (Job)", correct: true },
+                { text: "Ibrahim (Abraham)", correct: false },
+            ]
+        },
+        {
+            question: "Who was the father of Prophet Yaqub (Jacob)?",
+            answers: [
+                { text: "Dawud (David)", correct: false },
+                { text: "Ishaq (Isaac)", correct: true },
+                { text: "Yusuf (Joseph)", correct: false },
+                { text: "Ibrahim (Abraham)", correct: false },
+            ]
+        },
+        {
+            question: "Which Prophet took care of Maryam (Mary) when she was a child?",
+            answers: [
+                { text: "Zakariya (Zechariah)", correct: true },
+                { text: "Yahya (John the Baptist)", correct: false },
+                { text: "Isa (Jesus)", correct: false },
+                { text: "Ibrahim (Abraham)", correct: false },
+            ]   
+        },
+        {
+            question: "Prophet Muhammad was directly descended from which Prophet?",
+            answers: [
+                { text: "Ibrahim (Abraham)", correct: false },
+                { text: "Musa (Moses)", correct: false },
+                { text: "Nuh (Noah)", correct: false },
+                { text: "Ismail (Ishmael)", correct: true },
+            ]
+        },
+        {
+            question: "How many Prophets are mentioned in the Quran?",
+            answers: [
+                { text: "25", correct: true },
+                { text: "30", correct: false },
+                { text: "40", correct: false },
+                { text: "50", correct: false },
             ]
         }
     ]
