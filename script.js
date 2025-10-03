@@ -1640,6 +1640,289 @@ const questions = [
                 { text: "Arizona Coyotes", correct: false },
             ]
         }
+    ],
+    [
+        {
+            question: "Which NBA team's logo features a basketball with a claw mark through it?",
+            answers: [
+                { text: "Toronto Raptors", correct: true },
+                { text: "Chicago Bulls", correct: false },
+                { text: "Miami Heat", correct: false },
+                { text: "Golden State Warriors", correct: false },
+            ]
+        },
+        {
+            question: "Which team's logo is a bull's head?",
+            answers: [
+                { text: "Cleveland Cavaliers", correct: false },
+                { text: "Detroit Pistons", correct: false },
+                { text: "Chicago Bulls", correct: true },
+                { text: "Milwaukee Bucks", correct: false },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a bridge?",
+            answers: [
+                { text: "Golden State Warriors", correct: true },
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Portland Trail Blazers", correct: false },
+                { text: "Brooklyn Nets", correct: false },
+            ]
+        },
+        {
+            question: "Which team's logo features a flaming basketball?",
+            answers: [
+                { text: "Atlanta Hawks", correct: false },
+                { text: "Phoenix Suns", correct: false },
+                { text: "Houston Rockets", correct: false },
+                { text: "Miami Heat", correct: true },
+            ]
+        },
+        {
+            question: "Which NBA team's logo has a deer head with large antlers?",
+            answers: [
+                { text: "Milwaukee Bucks", correct: true },
+                { text: "Chicago Bulls", correct: false },
+                { text: "Cleveland Cavaliers", correct: false },
+                { text: "Detroit Pistons", correct: false },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a horse's head?",
+            answers: [
+                { text: "Charlotte Hornets", correct: false },
+                { text: "Dallas Mavericks", correct: true },
+                { text: "Denver Nuggets", correct: false },
+                { text: "Indiana Pacers", correct: false },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a lion's head?",
+            answers: [
+                { text: "Detroit Pistons", correct: false },
+                { text: "Charlotte Hornets", correct: false },
+                { text: "Cleveland Cavaliers", correct: true },
+                { text: "Orlando Magic", correct: false },
+            ]
+        },
+        {
+            question: "The logo with a wolf howling inside a blue star belongs to which NBA team?",
+            answers: [
+                { text: "Minnesota Timberwolves", correct: true },
+                { text: "Dallas Mavericks", correct: false },
+                { text: "Denver Nuggets", correct: false },
+                { text: "Utah Jazz", correct: false },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a stylized letter 'P' with a basketball?",
+            answers: [
+                { text: "Portland Trail Blazers", correct: false },
+                { text: "Philadelphia 76ers", correct: false },
+                { text: "Phoenix Suns", correct: false },
+                { text: "Indiana Pacers", correct: true },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a stylized letter 'L' with a basketball?",
+            answers: [
+                { text: "Los Angeles Clippers", correct: false },
+                { text: "Los Angeles Lakers", correct: true },
+                { text: "New Orleans Pelicans", correct: false },
+                { text: "Sacramento Kings", correct: false },
+            ]
+        },
+        {
+            question: "Which team's logo features a sword through a basketball shaped C?",
+            answers: [
+                { text: "Cleveland Cavaliers", correct: true },
+                { text: "Charlotte Hornets", correct: false },
+                { text: "Chicago Bulls", correct: false },
+                { text: "Golden State Warriors", correct: false },
+            ]
+        },
+        {
+           question: "Which team's logo is a spinning pinwheel design?",
+           answers: [
+               { text: "Brooklyn Nets", correct: false },
+               { text: "Portland Trail Blazers", correct: true },
+               { text: "Sacramento Kings", correct: false },
+               { text: "Utah Jazz", correct: false },
+           ] 
+        },
+        {
+            question: "The logo with a pickaxe crossing a basketball belongs to which NBA team?",
+            answers: [
+                { text: "Denver Nuggets", correct: true },
+                { text: "Minnesota Timberwolves", correct: false },
+                { text: "Utah Jazz", correct: false },
+                { text: "Oklahoma City Thunder", correct: false },
+            ]
+        },
+        {
+            question: "Which NBA team's logo features a pelican with a basketball?",
+            answers: [
+                { text: "New Orleans Pelicans", correct: true },
+                { text: "Miami Heat", correct: false },
+                { text: "Orlando Magic", correct: false },
+                { text: "Atlanta Hawks", correct: false },
+            ]   
+        },
+        {
+            question: "Which NBA team's logo has a wizard holding a basketball?",
+            answers: [
+                { text: "New Orleans Pelicans", correct: false },
+                { text: "Washington Wizards", correct: true },
+                { text: "Orlando Magic", correct: false },
+                { text: "Atlanta Hawks", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which NBA team has won the most championships?",
+            answers: [
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Boston Celtics", correct: true },
+                { text: "Chicago Bulls", correct: false },
+                { text: "Golden State Warriors", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the first ever NBA championship in 1947?",
+            answers: [
+                { text: "Philadelphia Warriors", correct: true },
+                { text: "Chicago Stags", correct: false },
+                { text: "New York Knicks", correct: false },
+                { text: "Washington Capitols", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 2023?",
+            answers: [
+                { text: "Boston Celtics", correct: false },
+                { text: "Golden State Warriors", correct: true },
+                { text: "Milwaukee Bucks", correct: false },
+                { text: "Miami Heat", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 2016, coming back from a 3-1 deficit?",
+            answers: [
+                { text: "Golden State Warriors", correct: false },
+                { text: "Cleveland Cavaliers", correct: true },
+                { text: "Toronto Raptors", correct: false },
+                { text: "San Antonio Spurs", correct: false },
+            ]   
+        },
+        {
+            question: "Which team won the NBA championship in 2019, their first in franchise history?",
+            answers: [
+                { text: "Golden State Warriors", correct: false },
+                { text: "Milwaukee Bucks", correct: false },
+                { text: "Denver Nuggets", correct: false },
+                { text: "Toronto Raptors", correct: true },
+            ]
+        },
+        {
+            question: "Which team won back to back NBA championships in 2017 and 2018?",
+            answers: [
+                { text: "Cleveland Cavaliers", correct: false },
+                { text: "Golden State Warriors", correct: true },
+                { text: "Houston Rockets", correct: false },    
+                { text: "San Antonio Spurs", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 2004, their first in franchise history?",
+            answers: [
+                { text: "Detroit Pistons", correct: true },
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "San Antonio Spurs", correct: false },
+                { text: "New Jersey Nets", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 2008, ending a 22-year title drought?",
+            answers: [
+                { text: "San Antonio Spurs", correct: false },
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Boston Celtics", correct: true },
+                { text: "Detroit Pistons", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 2010?",
+            answers: [
+                { text: "Los Angeles Lakers", correct: true },
+                { text: "Boston Celtics", correct: false },
+                { text: "Miami Heat", correct: false },
+                { text: "San Antonio Spurs", correct: false },
+            ]
+        },
+        {
+            question: "Micheal Jordan won 6 NBA championships with which team?",
+            answers: [
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Washington Wizards", correct: false },
+                { text: "Miami Heat", correct: false },
+                { text: "Chicago Bulls", correct: true },
+            ]
+        },
+        {
+            question: "The Miami Heat won back to back NBA championships with Lebron James in which years?",
+            answers: [
+                { text: "2010 and 2011", correct: false },
+                { text: "2011 and 2012", correct: false },
+                { text: "2012 and 2013", correct: true },
+                { text: "2013 and 2014", correct: false },
+            ]
+        },
+        {
+            question: "The San Antonio Spurs won their last NBA championship in which year?",
+            answers: [
+                { text: "2012", correct: false },
+                { text: "2013", correct: false },
+                { text: "2014", correct: true },
+                { text: "2015", correct: false },
+            ]
+        },
+        {
+            question: "Who won the NBA Finals in 2016 after being down 3-1 in the series?",
+            answers: [
+                { text: "Golden State Warriors", correct: false },
+                { text: "Cleveland Cavaliers", correct: true },
+                { text: "Toronto Raptors", correct: false },
+                { text: "San Antonio Spurs", correct: false },
+            ]
+        },
+        {
+            question: "The Golden State Warriors Dynasty began with Steph Currey in which year?",
+            answers: [
+                { text: "2014", correct: false },
+                { text: "2015", correct: true },
+                { text: "2016", correct: false },
+                { text: "2017", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 1985, their first in franchise history?",
+            answers: [
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Boston Celtics", correct: false },
+                { text: "Chicago Bulls", correct: false },
+                { text: "Portland Trail Blazers", correct: true },
+            ]
+        },
+        {
+            question: "Which team won the NBA championship in 1971, their first in franchise history?",
+            answers: [
+                { text: "New York Knicks", correct: true },
+                { text: "Los Angeles Lakers", correct: false },
+                { text: "Boston Celtics", correct: false },
+                { text: "Milwaukee Bucks", correct: false },
+            ]
+        }
     ]
 ];
 const questionElement = document.getElementById("question");
