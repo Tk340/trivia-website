@@ -972,7 +972,7 @@ const questions = [
             ]    
         },
         {
-            question: "who lead India's non-violent independence movement against British rule?",
+            question: "Who lead India's non-violent independence movement against British rule?",
             answers: [
                 { text: "Jawaharlal Nehru", correct: false },
                 { text: "Subhas Chandra Bose", correct: false },
@@ -1315,6 +1315,327 @@ const questions = [
                 { text: "Nineveh", correct: false },
                 { text: "Ur", correct: false },
                 { text: "Persepolis", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which team's logo features a maple leaf?",
+            answers: [
+                { text: "Ottawa Senators", correct: false },
+                { text: "Toronto Maple Leafs", correct: true },
+                { text: "Montreal Canadiens", correct: false },
+                { text: "Vancouver Canucks", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo has a spoked B?",
+            answers: [
+                { text: "Boston Bruins", correct: true },
+                { text: "Chicago Blackhawks", correct: false },
+                { text: "Buffalo Sabers", correct: false },
+                { text: "New York Rangers", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features a winged wheel?",
+            answers: [
+                { text: "Detroit Red Wings", correct: true },
+                { text: "Pittsburgh Penguins", correct: false },
+                { text: "Columbus Blue Jackets", correct: false },
+                { text: "St. Louis Blues", correct: false },
+            ]
+        },
+        {
+            question: "Which team's logo has a stylized C with a flame?",
+            answers: [
+                { text: "Montreal Canadiens", correct: false },
+                { text: "Chicago Blackhawks", correct: false },
+                { text: "Carolina Hurricanes", correct: false },
+                { text: "Calgary Flames", correct: true },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features an indigenous chief's head with feathers?",
+            answers: [
+                { text: "Chicago Blackhawks", correct: true },
+                { text: "Washington Capitals", correct: false },
+                { text: "Florida Panthers", correct: false },
+                { text: "New Jersey Devils", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo has an anchor and a Space Needle hidden in it?",
+            answers: [
+                { text: "Vancouver Canucks", correct: false },
+                { text: "San Jose Sharks", correct: false },
+                { text: "Los Angeles Kings", correct: false },
+                { text: "Seattle Kraken", correct: true },
+            ]
+        },
+        {
+            question: "Which NHL team features a musical note in its logo?",
+            answers: [
+                { text: "Nashville Predators", correct: false },
+                { text: "St. Louis Blues", correct: true },
+                { text: "Pittsburgh Penguins", correct: false },
+                { text: "Columbus Blue Jackets", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features a shark biting a hockey stick?",
+            answers: [
+                { text: "San Jose Sharks", correct: true },
+                { text: "Anaheim Ducks", correct: false },      
+                { text: "Florida Panthers", correct: false },
+                { text: "Tampa Bay Lightning", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features a saber-toothed tiger?",
+            answers: [
+                { text: "Buffalo Sabers", correct: false },
+                { text: "Florida Panthers", correct: false },
+                { text: "Calgary Flames", correct: false },
+                { text: "San Jose Sharks", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features a star with a hockey stick?",
+            answers: [
+                { text: "Dallas Stars", correct: true },
+                { text: "Colorado Avalanche", correct: false },
+                { text: "Minnesota Wild", correct: false },
+                { text: "Arizona Coyotes", correct: false },
+            ]
+        },
+        {
+            question: "Which NHL team's logo features a bear head?",
+            answers: [
+                { text: "Chicago Blackhawks", correct: false },
+                { text: "Boston Bruins", correct: true },
+                { text: "Washington Capitals", correct: false },
+                { text: "New York Rangers", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which team won the most Stanley Cups?",
+            answers: [
+                { text: "Montreal Canadiens", correct: true },
+                { text: "Toronto Maple Leafs", correct: false },
+                { text: "Detroit Red Wings", correct: false },
+                { text: "New York Islanders", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the first ever Stanley Cup in 1893?",
+            answers: [
+                { text: "Quebec Bulldogs", correct: false },
+                { text: "Toronto Hockey Club", correct: false },
+                { text: "Ottawa Senators", correct: false },
+                { text: "Montreal Hockey Club", correct: true },
+            ]
+        },
+        {
+            question: "Which team won the Stanley Cup in 1999, ending a 54-year championship drought?",
+            answers: [
+                { text: "Buffalo Sabers", correct: false },
+                { text: "New York Rangers", correct: true },
+                { text: "Dallas Stars", correct: false },
+                { text: "Colorado Avalanche", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the Stanley Cup in 2023?",
+            answers: [
+                { text: "Vegas Golden Knights", correct: true },
+                { text: "Florida Panthers", correct: false },
+                { text: "Boston Bruins", correct: false },
+                { text: "Toronto Maple Leafs", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the Stanley Cup in 2010, their first in franchise history?",
+            answers: [
+                { text: "Tampa Bay Lightning", correct: false },
+                { text: "Philadelphia Flyers", correct: false },
+                { text: "Vancouver Canucks", correct: false },
+                { text: "Chicago Blackhawks", correct: true },
+            ]
+        },
+        {
+            question: "Which team won back to back Stanley Cups in 2016 and 2017?",
+            answers: [
+                { text: "Pittsburgh Penguins", correct: true },
+                { text: "Washington Capitals", correct: false },
+                { text: "Los Angeles Kings", correct: false },
+                { text: "Chicago Blackhawks", correct: false },
+            ]
+        },
+        {
+            question: "Which canadian team won the Stanley Cup in 1993, their last championship to date?",
+            answers: [
+                { text: "Vancouver Canucks", correct: false },
+                { text: "Edmonton Oilers", correct: false },
+                { text: "Montreal Canadiens", correct: true },
+                { text: "Calgary Flames", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the Stanley Cup in 2004, their first in franchise history?",
+            answers: [
+                { text: "Tampa Bay Lightning", correct: true },
+                { text: "Carolina Hurricanes", correct: false },
+                { text: "Anaheim Ducks", correct: false },
+                { text: "New Jersey Devils", correct: false },
+            ]
+        },
+        {
+            question: "The Tampa Bay Lightning won back to back Stanley Cups in which years?",
+            answers: [
+                { text: "2018 and 2019", correct: false },
+                { text: "2019 and 2020", correct: false },
+                { text: "2020 and 2021", correct: true },
+                { text: "2021 and 2022", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the Stanley Cup in 2001, their first in franchise history?",
+            answers: [
+                { text: "Colorado Avalanche", correct: false },
+                { text: "New Jersey Devils", correct: false },
+                { text: "Tampa Bay Lightning", correct: false },
+                { text: "Colorado Avalanche", correct: true },
+            ]
+        },
+        {
+            question: "Which team in the NHL has never won a Stanley Cup?",
+            answers: [
+                { text: "Vancouver Canucks", correct: false },
+                { text: "Buffalo Sabers", correct: false },
+                { text: "Arizona Coyotes", correct: true },
+                { text: "Minnesota Wild", correct: false },
+            ]
+        },
+        {
+            question: "Which team won the Cup in 1967, the last year before the NHL expanded from 6 to 12 teams?",
+            answers: [
+                { text: "Toronto Maple Leafs", correct: true },
+                { text: "Montreal Canadiens", correct: false },
+                { text: "Detroit Red Wings", correct: false },
+                { text: "Chicago Blackhawks", correct: false },
+            ]
+        },
+        {
+            question: "Which team ended the Detriot Red Wings Dynasty by winning the Stanley Cup in 1995?",
+            answers: [
+                { text: "New Jersey Devils", correct: true },
+                { text: "Pittsburgh Penguins", correct: false },
+                { text: "Colorado Avalanche", correct: false },
+                { text: "Chicago Blackhawks", correct: false },
+            ]
+        },
+        {
+            question: "Which expansion team (post 1967) was the first to win the Stanley Cup?",
+            answers: [
+                { text: "Los Angeles Kings", correct: false },
+                { text: "New York Islanders", correct: false },
+                { text: "Philadelphia Flyers", correct: true },
+                { text: "Calgary Flames", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "WHich teams mascots are named after a type of bird?",
+            answers: [
+                { text: "Toronto Maple Leafs", correct: false },
+                { text: "Ottawa Senators", correct: false },
+                { text: "Chicago Blackhawks", correct: false },
+                { text: "Anaheim Ducks", correct: true },
+            ]
+        },
+        {
+            question: "Which team's mascot is named Gritty?",
+            answers: [
+                { text: "Pittsburgh Penguins", correct: false },
+                { text: "Philadelphia Flyers", correct: true },
+                { text: "New York Rangers", correct: false },
+                { text: "New Jersey Devils", correct: false },
+            ]
+        },
+        {
+            question: "Which team's mascot is a bear named Bailey?",
+            answers: [
+                { text: "Boston Bruins", correct: true },
+                { text: "Chicago Blackhawks", correct: false },
+                { text: "Washington Capitals", correct: false },
+                { text: "New York Rangers", correct: false },
+            ]
+        },
+        {
+            question: "The Pittsburgh Penguins mascot is named what?",
+            answers: [
+                { text: "Iceburgh", correct: true },
+                { text: "Pucky", correct: false },
+                { text: "Slapshot", correct: false },
+                { text: "Harvey the Hound", correct: false },
+            ]
+        },
+        {
+            question: "Which Canadian team's mascot is named Carlton the Bear?",
+            answers: [
+                { text: "Vancouver Canucks", correct: false },
+                { text: "Calgary Flames", correct: false },
+                { text: "Toronto Maple Leafs", correct: true },
+                { text: "Montreal Canadiens", correct: false },
+            ]
+        },
+        {
+            question: "Which team's mascot is named Howler the Coyote?",
+            answers: [
+                { text: "Arizona Coyotes", correct: true },
+                { text: "Minnesota Wild", correct: false },
+                { text: "Colorado Avalanche", correct: false },
+                { text: "Dallas Stars", correct: false },
+            ]
+        },
+        {
+            question: "The Montréal Canadiens mascot is named what?",
+            answers: [
+                { text: "Youppi!", correct: true },
+                { text: "Benny the Bull", correct: false },
+                { text: "Stanley C. Panther", correct: false },
+                { text: "S.J. Sharkie", correct: false },
+            ]
+        },
+        {
+            question: "Which team's mascot is named Fin the Shark?",
+            answers: [
+                { text: "Vancouver Canucks", correct: false },
+                { text: "Anaheim Ducks", correct: false },
+                { text: "San Jose Sharks", correct: true },
+                { text: "Tampa Bay Lightning", correct: false },
+            ]
+        },
+        {
+            question: "The Vegas Golden Knights mascot is unusal because it is a:",
+            answers: [
+                { text: "Dragon", correct: false },
+                { text: "Lion", correct: false },
+                { text: "Giant", correct: false },
+                { text: "Gila Monster", correct: true },
+            ]
+        },
+        {
+            question: "Which team's mascot is named Bailey the Lion?",
+            answers: [
+                { text: "Detroit Red Wings", correct: false },
+                { text: "Dallas Stars", correct: false },
+                { text: "Los Angeles Kings", correct: true },
+                { text: "Arizona Coyotes", correct: false },
             ]
         }
     ]
