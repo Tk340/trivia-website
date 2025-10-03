@@ -1,3 +1,5 @@
+let coins = parseInt(localStorage.getItem("coins")) || 0;
+document.getElementById("coinCount").textContent = coins;
 const questions = [
     [
         {
@@ -1689,8 +1691,14 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
+        coins += 10; // Add 10 coins for a correct answer
+        localStorage.setItem("coins", coins);
+        document.getElementById("coinCount").textContent = coins;
     } else {
         selectedBtn.classList.add("incorrect");
+        coins -= 5; // Subtract 5 coins for an incorrect answer
+        localStorage.setItem("coins", coins);
+        document.getElementById("coinCount").textContent = coins;
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
