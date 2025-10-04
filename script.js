@@ -1,5 +1,8 @@
 let coins = parseInt(localStorage.getItem("coins")) || 0;
 document.getElementById("coinCount").textContent = coins;
+if (document.getElementById("coinCount")) {
+  document.getElementById("coinCount").textContent = coins;
+}
 const questions = [
     [
         {
@@ -1923,6 +1926,398 @@ const questions = [
                 { text: "Milwaukee Bucks", correct: false },
             ]
         }
+    ],
+    [
+        {
+            qestion: "Who won the most FIFA world cups?",
+            answers: [
+                { text: "Germany", correct: false },
+                { text: "Italy", correct: false },
+                { text: "Argentina", correct: false },
+                { text: "Brazil", correct: true },
+            ]
+        },
+        {
+            question: "Which country hosted the 2018 FIFA World Cup?",
+            answers: [
+                { text: "Brazil", correct: false },
+                { text: "Russia", correct: true },
+                { text: "Germany", correct: false },
+                { text: "South Africa", correct: false },
+            ]
+        },
+        {
+            question: "Who won the 2022 FIFA World Cup?",
+            answers: [
+                { text: "France", correct: false },
+                { text: "Argentina", correct: true },
+                { text: "Brazil", correct: false },
+                { text: "Germany", correct: false },
+            ]
+        },
+        {
+            question: "Which country hosted the 2014 FIFA World Cup?",
+            answers: [
+                { text: "Germany", correct: false },
+                { text: "Brazil", correct: true },
+                { text: "South Africa", correct: false },
+                { text: "Russia", correct: false },
+            ]
+        },
+        {
+            question: "Who won the 2010 FIFA World Cup?",
+            answers: [
+                { text: "Netherlands", correct: false },
+                { text: "Spain", correct: true },
+                { text: "Germany", correct: false },
+                { text: "Italy", correct: false },
+            ]
+        },
+        {
+            question: "WHuch country won the first ever FIFA World Cup in 1930?",
+            answers: [
+                { text: "Uruguay", correct: true },
+                { text: "Argentina", correct: false },
+                { text: "Brazil", correct: false },
+                { text: "Italy", correct: false },
+            ]
+        },
+        {
+            question: "Who won the 2018 FIFA World Cup?",
+            answers: [
+                { text: "Croatia", correct: false },
+                { text: "France", correct: true },
+                { text: "Belgium", correct: false },
+                { text: "England", correct: false },
+            ]
+        },
+        {
+            question: "Which country hosted the 2006 FIFA World Cup?",
+            answers: [
+                { text: "Italy", correct: false },
+                { text: "Germany", correct: true },
+                { text: "France", correct: false },
+                { text: "Spain", correct: false },
+            ]
+        },
+        {
+            question: "Which African country was the first to reach the World Cup semifinals?",
+            answers: [
+                { text: "Nigeria", correct: false },
+                { text: "Cameroon", correct: false },
+                { text: "Morocco", correct: true },
+                { text: "Senegal", correct: false },
+            ]
+        },
+        {
+            question: "Which country won the 2010 FIFA World Cup in South Africa?",
+            answers: [
+                { text: "Netherlands", correct: false },
+                { text: "Spain", correct: true },
+                { text: "Germany", correct: false },
+                { text: "Italy", correct: false },
+            ]
+        },
+        {
+            question: "Which country was the first to win back-to-back FIFA World Cups?",
+            answers: [
+                { text: "Italy", correct: true },
+                { text: "Brazil", correct: false },
+                { text: "Germany", correct: false },
+                { text: "Argentina", correct: false },
+            ]
+        },
+        {
+            question: "Which team was the first team to win the World Cup twice?",
+            answers: [
+                { text: "Italy", correct: true },
+                { text: "Brazil", correct: false },
+                { text: "Germany", correct: false },
+                { text: "Argentina", correct: false },
+            ]
+        },
+        {
+            question: "Which country hosted the 2002 FIFA World Cup?",
+            answers: [
+                { text: "Japan and South Korea", correct: true },
+                { text: "China", correct: false },
+                { text: "Australia", correct: false },
+                { text: "Thailand", correct: false },
+            ]
+        },
+        {
+            question: "Who won the 2002 FIFA World Cup?",
+            answers: [
+                { text: "Germany", correct: false },
+                { text: "Brazil", correct: true },
+                { text: "Italy", correct: false },
+                { text: "Argentina", correct: false },
+            ]
+        },
+        {
+            question: "When did England win its only World Cup?",
+            answers: [
+                { text: "1966", correct: true },
+                { text: "1970", correct: false },
+                { text: "1982", correct: false },
+                { text: "1990", correct: false },
+            ]
+        },
+        {
+            question: "Who won the 1986 FIFA World Cup?",
+            answers: [
+                { text: "Germany", correct: false },
+                { text: "Argentina", correct: true },
+                { text: "Italy", correct: false },
+                { text: "Brazil", correct: false },
+            ]
+        },
+        {
+            question: 'Which European team won the 1954 World Cup in "The Miracle of Bern"?',
+            answers: [
+                { text: "East Germany", correct: false },
+                { text: "Hungary", correct: true },
+                { text: "Germany", correct: false },
+                { text: "West Germany", correct: true },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which club features a red devil holding a trident in its logo?",
+            answers: [
+                { text: "Liverpool", correct: false },
+                { text: "Manchester United", correct: true },
+                { text: "Chelsea", correct: false },
+                { text: "Arsenal", correct: false },
+            ]
+        },
+        {
+            question: "Which club's logo features a cannon?",
+            answers: [
+                { text: "Arsenal", correct: true },
+                { text: "Tottenham Hotspur", correct: false },
+                { text: "West Ham United", correct: false },
+                { text: "Leicester City", correct: false },
+            ]
+        },
+        {
+            question: "Which team has a logo with a blue lion holding a staff?",
+            answers: [
+                { text: "Chelsea", correct: true },
+                { text: "Manchester City", correct: false },
+                { text: "Everton", correct: false },
+                { text: "Leicester City", correct: false },
+            ]
+        },
+        {
+            question: "Which club's logo features a liver bird?",
+            answers: [
+                { text: "Manchester United", correct: false },
+                { text: "Aston Villa", correct: true },
+                { text: "Everton", correct: false },
+                { text: "Liverpool", correct: true },
+            ]
+        },
+        {
+            question: "Which Spanish club's logo has red and blue stripes with a cross and a ball?",
+            answers: [
+                { text: "Barcelona", correct: true },
+                { text: "Real Madrid", correct: false },
+                { text: "Atletico Madrid", correct: false },
+                { text: "Valencia", correct: false },
+            ]
+        },
+        {
+            question: "Which German club's badge is a large BVB 09 in black and yellow?",
+            answers: [
+                { text: "Bayern Munich", correct: false },
+                { text: "Borussia Dortmund", correct: true },
+                { text: "RB Leipzig", correct: false },
+                { text: "Schalke 04", correct: false },
+            ]
+        },
+        {
+            question: "Which Italian club's logo shows a wolf with twins Romulus and Remus?",
+            answers: [
+                { text: "Juventus", correct: false },
+                { text: "AC Milan", correct: false },
+                { text: "AS Roma", correct: true },
+                { text: "Inter Milan", correct: false },
+            ]
+        },
+        {
+            question: "Which French club's logo features a blue and red shield with a fleur-de-lis and a cradle?",
+            answers: [
+                { text: "Marseille", correct: false },
+                { text: "Lyon", correct: false },
+                { text: "Monaco", correct: true },
+                { text: "Paris Saint-Germain", correct: false },
+            ]
+        },
+        {
+            question: "Which club's logo features a yellow submarine?",
+            answers: [
+                { text: "Villarreal", correct: true },
+                { text: "Valencia", correct: false },
+                { text: "Sevilla", correct: false },
+                { text: "Real Betis", correct: false },
+            ]
+        },
+        {
+            question: "Which German club's badge has the initials FCB in red and blue stripes?",
+            answers: [
+                { text: "Bayer Leverkusen", correct: false },
+                { text: "Borussia Dortmund", correct: false },
+                { text: "Bayern Munich", correct: true },
+                { text: "RB Leipzig", correct: false },
+            ]
+        },
+        {
+            question: "Which club's logo has a bat on top?",
+            answers: [
+                { text: "Sevilla", correct: false },
+                { text: "Valencia", correct: true },
+                { text: "Villarreal", correct: false },
+                { text: "Real Betis", correct: false },
+            ]
+        },
+        {
+            question: "Which South American club's badge is famous for black and yellow stripes with the letters SFC?",
+            answers: [
+                { text: "Boca Juniors", correct: false },
+                { text: "Peñarol", correct: false },
+                { text: "Santos", correct: true },
+                { text: "River Plate", correct: false },
+            ]
+        }
+    ],
+    [
+        {
+            question: "Which player is nicknamed La Pulga?",
+            answers: [
+                { text: "Cristiano Ronaldo", correct: false },
+                { text: "Neymar", correct: false },
+                { text: "Lionel Messi", correct: true },
+                { text: "Kylian Mbappe", correct: false },
+            ]
+        },
+        { question: "Which player is known as CR7?",
+            answers: [
+                { text: "Cristiano Ronaldo", correct: true },
+                { text: "Lionel Messi", correct: false },
+                { text: "Neymar", correct: false },
+                { text: "Kylian Mbappe", correct: false },
+            ]
+        },
+        {
+            question: "Which player is nicknamed The Egyptian King?",
+            answers: [
+                { text: "Mohamed Salah", correct: true },
+                { text: "Sadio Mane", correct: false },
+                { text: "Riyad Mahrez", correct: false },
+                { text: "Hakim Ziyech", correct: false },
+            ]
+        },
+        {
+            question: "Which player scored the 'Hand of God' goal in the 1986 World Cup?",
+            answers: [
+                { text: "Pelé", correct: false },
+                { text: "Diego Maradona", correct: true },
+                { text: "Johan Cruyff", correct: false },
+                { text: "Zinedine Zidane", correct: false },
+            ]
+        },
+        {
+            question: "Which player is famous for the quote 'I think therefore I play' and wore the number 21 for Italy?",
+            answers: [
+                { text: "Paolo Maldini", correct: false },
+                { text: "Francesco Totti", correct: false },
+                { text: "Gianluigi Buffon", correct: false },
+                { text: "Andrea Pirlo", correct: true },
+            ]
+        },
+        {
+            question: "Who is known as O Rei (The King) in football?",
+            answers: [
+                { text: "Diego Maradona", correct: false },
+                { text: "Pelé", correct: true },
+                { text: "Zinedine Zidane", correct: false },
+                { text: "Cristiano Ronaldo", correct: false },
+            ]
+        },
+        {
+            question: "Which player is nicknamed The Special One?",
+            answers: [
+                { text: "Cristiano Ronaldo", correct: false },
+                { text: "Lionel Messi", correct: false },
+                { text: "José Mourinho", correct: true },
+                { text: "Pep Guardiola", correct: false },
+            ]
+        },
+        {
+            question: "Which Brazilian player was famous for his flashy skills and played for Barcelona and AC Milan?",
+            answers: [
+                { text: "Rivaldo", correct: false },
+                { text: "Kaká", correct: false },
+                { text: "Ronaldinho", correct: true },
+                { text: "Robinho", correct: false },
+            ]
+        },
+        {
+            question: "Which French player scored twice in the 1998 World Cup final?",
+            answers: [
+                { text: "Zinedine Zidane", correct: true },
+                { text: "Thierry Henry", correct: false },
+                { text: "Didier Deschamps", correct: false },
+                { text: "David Trezeguet", correct: false },
+            ]
+        },
+        {
+            question: "Which African player won the Ballon d'Or in 1995?",
+            answers: [
+                { text: "George Weah", correct: true },
+                { text: "Samuel Eto'o", correct: false },
+                { text: "Didier Drogba", correct: false },
+                { text: "Yaya Touré", correct: false },
+            ]
+        },
+        {
+            question: "Which German foorball player scored the most goals in World Cup history?",
+            answers: [
+                { text: "Gerd Müller", correct: false },
+                { text: "Miroslav Klose", correct: true },
+                { text: "Lothar Matthäus", correct: false },
+                { text: "Jürgen Klinsmann", correct: false },
+            ]
+        },
+        {
+            question: "Which Dutch player is known for his 'Cruyff Turn'?",
+            answers: [
+                { text: "Ruud Gullit", correct: false },
+                { text: "Marco van Basten", correct: false },
+                { text: "Johan Cruyff", correct: true },
+                { text: "Dennis Bergkamp", correct: false },
+            ]
+        },
+        {
+            question: "Which goalkeeper is nicknamed Gigi?",
+            answers: [
+                { text: "Gianluigi Buffon", correct: true },
+                { text: "Iker Casillas", correct: false },
+                { text: "Manuel Neuer", correct: false },
+                { text: "Petr Čech", correct: false },
+            ]
+        },
+        {
+            question: "Which English Player is known as 'Captain Fantastic'?",
+            answers: [
+                { text: "David Beckham", correct: false },
+                { text: "Wayne Rooney", correct: false },
+                { text: "Frank Lampard", correct: false },
+                { text: "Steven Gerrard", correct: true },
+            ]
+        }
     ]
 ];
 const questionElement = document.getElementById("question");
@@ -1971,17 +2366,28 @@ function resetState() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if (isCorrect) {
-        selectedBtn.classList.add("correct");
-        score++;
-        coins += 10; // Add 10 coins for a correct answer
-        localStorage.setItem("coins", coins);
-        document.getElementById("coinCount").textContent = coins;
-    } else {
-        selectedBtn.classList.add("incorrect");
-        coins -= 5; // Subtract 5 coins for an incorrect answer
-        localStorage.setItem("coins", coins);
-        document.getElementById("coinCount").textContent = coins;
+    if (selectedBtn.dataset.correct === "true") {
+  let reward = 10;
+
+  // check if double coins is active
+  let doubleCoins = parseInt(localStorage.getItem("doubleCoins")) || 0;
+  if (doubleCoins > 0) {
+    reward *= 2;
+    localStorage.setItem("doubleCoins", doubleCoins - 1);
+  }
+
+  // add coins
+  coins += reward;
+  localStorage.setItem("coins", coins);
+
+  if (document.getElementById("coinCount")) {
+    document.getElementById("coinCount").textContent = coins;
+  }
+} else {
+    selectedBtn.classList.add("incorrect");
+    coins -= 5; // Subtract 5 coins for an incorrect answer
+    localStorage.setItem("coins", coins);
+    document.getElementById("coinCount").textContent = coins;
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -1990,6 +2396,70 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+}
+function buyItem(item, cost) {
+  if (coins >= cost) {
+    coins -= cost;
+    localStorage.setItem("coins", coins);
+
+    if (document.getElementById("coinCount")) {
+      document.getElementById("coinCount").textContent = coins;
+    }
+
+    switch(item) {
+      case 'hint':
+        alert("Hint purchased! You can use it in your next quiz.");
+        localStorage.setItem("hintAvailable", true);
+        break;
+      case 'skip':
+        alert("Skip purchased! You can skip one question.");
+        localStorage.setItem("skipAvailable", true);
+        break;
+      case 'double':
+        alert("Double Coins activated for next 3 questions!");
+        localStorage.setItem("doubleCoins", 3);
+        break;
+    }
+  } else {
+    alert("Not enough coins!");
+  }
+}
+function useHint() {
+  let hintAvailable = localStorage.getItem("hintAvailable");
+  if (hintAvailable) {
+    // get all answer buttons
+    let allButtons = document.querySelectorAll(".btn-grid .btn");
+    let incorrectButtons = Array.from(allButtons).filter(
+      btn => btn.dataset.correct !== "true"
+    );
+
+    // pick 2 random incorrect answers
+    for (let i = 0; i < 2 && incorrectButtons.length > 0; i++) {
+      let randIndex = Math.floor(Math.random() * incorrectButtons.length);
+      let btnToRemove = incorrectButtons[randIndex];
+      btnToRemove.disabled = true;
+      btnToRemove.style.opacity = "0.5"; // fade it out
+      incorrectButtons.splice(randIndex, 1);
+    }
+
+    alert("Hint used! Two wrong answers removed.");
+    localStorage.removeItem("hintAvailable");
+  } else {
+    alert("No hint available. Buy one in the shop!");
+  }
+}
+
+function useSkip() {
+  let skipAvailable = localStorage.getItem("skipAvailable");
+  if (skipAvailable) {
+    alert("Question skipped!");
+    localStorage.removeItem("skipAvailable");
+
+    // Simulate clicking the Next button
+    document.getElementById("nxt-button").click();
+  } else {
+    alert("No skip available. Buy one in the shop!");
+  }
 }
 
 function showScore() {
