@@ -1,3 +1,4 @@
+
 let coins = parseInt(localStorage.getItem("coins")) || 0;
 document.getElementById("coinCount").textContent = coins;
 if (document.getElementById("coinCount")) {
@@ -2332,6 +2333,7 @@ function startQuiz() {
     question = questions[window.location.hash.replace("#", "") - 1] || questions[0];
     question.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
+    score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
@@ -2367,6 +2369,7 @@ function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if (selectedBtn.dataset.correct === "true") {
+  score++; // ✅ add this line to count correct answers
   let reward = 10;
 
   // check if double coins is active
@@ -2385,7 +2388,7 @@ function selectAnswer(e) {
   }
 } else {
     selectedBtn.classList.add("incorrect");
-    coins -= 5; // Subtract 5 coins for an incorrect answer
+    coins -= 7; // Subtract 7 coins for an incorrect answer
     localStorage.setItem("coins", coins);
     document.getElementById("coinCount").textContent = coins;
     }
@@ -2466,8 +2469,8 @@ function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
     nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "Back";
     nextButton.style.display = "block";
-    score = 0;
 }
 
 
