@@ -1,3 +1,5 @@
+const homeButton = document.getElementById("home-button");
+const summaryDiv = document.getElementById("summary");
 let answerSummary = [];
 const soundCorrect = new Audio("sounds/correct.wav");
 const soundWrong = new Audio("sounds/wrong.wav");
@@ -2348,6 +2350,10 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
+    const summaryEl = document.getElementById("summary");
+    if (summaryEl) summaryEl.style.display = "none";
+    if (homeButton) homeButton.style.display = "none";
+
     question = questions[window.location.hash.replace("#", "") - 1] || questions[0];
     question.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
@@ -2355,6 +2361,7 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
 
 function showQuestion() {
     resetState();
@@ -2542,7 +2549,7 @@ function showScore() {
   resetState();
   questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
 
-  // make summary
+  // Make the answer summary
   let summaryHTML = "<h2>Answer Summary</h2><ul>";
   answerSummary.forEach((item, i) => {
     const resultClass = item.isCorrect ? "correct" : "incorrect";
@@ -2560,12 +2567,37 @@ function showScore() {
   });
   summaryHTML += "</ul>";
 
-  const summaryDiv = document.getElementById("summary");
+  // show summary on screen
   summaryDiv.innerHTML = summaryHTML;
   summaryDiv.style.display = "block";
 
+  // show "Play Again" and "Go Home"
+nextButton.innerHTML = "Play Again";
+nextButton.style.display = "block";
+
+if (homeButton) {
+  homeButton.style.display = "inline-block";
+  homeButton.onclick = () => (window.location.href = "home.html");
+}
+
+score = 0;
+answerSummary = []; // reset for next round
+
+  if (homeButton) {
+    homeButton.style.display = "inline-block";
+    homeButton.onclick = () => window.location.href = "home.html";
+  }
+  const homeButton = document.getElementById("home-button");
+  // only attach listener once
+  if (homeButton && !homeButton.hasListener) {
+    homeButton.addEventListener("click", () => {
+      window.location.href = "home.html";
+      });
+      homeButton.hasListener = true; // mark it so we don’t attach again
+    }
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
+  if (homeButton) homeButton.style.display = "block";
   score = 0;
   answerSummary = []; // reset for next round
 }
@@ -2595,6 +2627,14 @@ function handleNextButton() {
 }
 
 nextButton.addEventListener("click", () => {
+    // 🔙 Go Back to Home button setup
+const homeButton = document.getElementById("home-button");
+if (homeButton) {
+  homeButton.addEventListener("click", () => {
+    window.location.href = "home.html"; // make sure this matches your homepage file name
+  });
+}
+
     if (currentQuestionIndex < question.length) {
         currentQuestionIndex++;
         handleNextButton();
