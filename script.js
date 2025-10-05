@@ -1110,7 +1110,7 @@ const questions = [
         {
             question: "The American Civil War was between which two factions?",
             answers: [
-                { text: "The Union and the Confederacy", correct: true },
+                { text: "The Union and the Confederacy", correct: false },
                 { text: "The Federalists and the Anti-Federalists", correct: false },
                 { text: "The North and the South", correct: true },
                 { text: "The East and the West", correct: false },
@@ -2097,7 +2097,7 @@ const questions = [
             question: 'Which European team won the 1954 World Cup in "The Miracle of Bern"?',
             answers: [
                 { text: "East Germany", correct: false },
-                { text: "Hungary", correct: true },
+                { text: "Hungary", correct: false },
                 { text: "Germany", correct: false },
                 { text: "West Germany", correct: true },
             ]
@@ -2135,7 +2135,7 @@ const questions = [
             question: "Which club's logo features a liver bird?",
             answers: [
                 { text: "Manchester United", correct: false },
-                { text: "Aston Villa", correct: true },
+                { text: "Aston Villa", correct: false },
                 { text: "Everton", correct: false },
                 { text: "Liverpool", correct: true },
             ]
@@ -2577,7 +2577,7 @@ nextButton.style.display = "block";
 
 if (homeButton) {
   homeButton.style.display = "inline-block";
-  homeButton.onclick = () => (window.location.href = "home.html");
+  homeButton.onclick = () => (window.location.href = "index.html");
 }
 
 score = 0;
@@ -2585,13 +2585,13 @@ answerSummary = []; // reset for next round
 
   if (homeButton) {
     homeButton.style.display = "inline-block";
-    homeButton.onclick = () => window.location.href = "home.html";
+    homeButton.onclick = () => window.location.href = "index.html";
   }
   const homeButton = document.getElementById("home-button");
   // only attach listener once
   if (homeButton && !homeButton.hasListener) {
     homeButton.addEventListener("click", () => {
-      window.location.href = "home.html";
+      window.location.href = "index.html";
       });
       homeButton.hasListener = true; // mark it so we don’t attach again
     }
@@ -2631,7 +2631,7 @@ nextButton.addEventListener("click", () => {
 const homeButton = document.getElementById("home-button");
 if (homeButton) {
   homeButton.addEventListener("click", () => {
-    window.location.href = "home.html"; // make sure this matches your homepage file name
+    window.location.href = "index.html"; // make sure this matches your homepage file name
   });
 }
 
