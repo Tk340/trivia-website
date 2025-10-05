@@ -106,6 +106,7 @@ a {
     justify-content: center;
     gap: 70px;
     margin-top: 100px;
+    top: 50px;
 }
 .quiz-card {
     background: #fff;
@@ -221,4 +222,89 @@ a {
     color: #fff;
     margin-top: 20px;
     font-size: 36px;
+}
+#questionCounter {
+  font-size: 18px;
+  color: #000;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+#streakCounter {
+  font-size: 18px;
+  color: #ff9800;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  transition: all 0.3s ease;
+}
+#timerDisplay {
+  font-size: 18px;
+  color: #f44336;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.mute-btn {
+  position: fixed;
+  top: 170px;
+  right: 1300px; /* puts it near your coins bar but not overlapping */
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background 0.3s ease;
+}
+
+.mute-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.summary {
+  margin-top: 20px;
+  text-align: left;
+  padding: 15px;
+  background-color: #222;
+  border-radius: 10px;
+  display: none;
+  color: #fff;
+}
+
+.summary h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.summary li.correct {
+  background-color: #2e7d32;
+}
+
+.summary li.incorrect {
+  background-color: #c62828;
+}
+.summary button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #001e4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.summary button:hover {
+  background: #333;
+}
+.quiz-card-container {
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }

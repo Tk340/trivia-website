@@ -1,4 +1,22 @@
+let answerSummary = [];
+const soundCorrect = new Audio("sounds/correct.wav");
+const soundWrong = new Audio("sounds/wrong.wav");
+const soundBonus = new Audio("sounds/bonus.wav");
+// 🎵 Sound effects (online URLs, no downloads)
+// optional: control volumes (0 to 1)
+soundCorrect.volume = 0.6;
+soundWrong.volume   = 0.6;
 
+// helper to safely replay sounds
+function playSound(sound) {
+  sound.pause();
+  sound.currentTime = 0;
+  sound.play();
+}
+let soundEnabled = true; // 🔊 sounds start on
+let timeLeft = 15;
+let timerInterval;
+let streak = 0;
 let coins = parseInt(localStorage.getItem("coins")) || 0;
 document.getElementById("coinCount").textContent = coins;
 if (document.getElementById("coinCount")) {
@@ -2343,6 +2361,8 @@ function showQuestion() {
     let currentQuestion = question[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    document.getElementById("questionCounter").textContent =
+  `${currentQuestionIndex + 1} / ${question.length}`;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -2353,9 +2373,35 @@ function showQuestion() {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
+        startTimer();
     });
 }
 
+function startTimer() {
+  clearInterval(timerInterval); // clear previous timer
+  timeLeft = 15; // reset timer each question
+
+  const timerDisplay = document.getElementById("timerDisplay");
+  if (timerDisplay) {
+    timerDisplay.textContent = `⏱️ Time Left: ${timeLeft}s`;
+    timerDisplay.classList.remove("low-time");
+  }
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    if (timerDisplay) {
+      timerDisplay.textContent = `⏱️ Time Left: ${timeLeft}s`;
+      if (timeLeft <= 5) timerDisplay.classList.add("low-time");
+    }
+
+    if (timeLeft <= 0) {
+  clearInterval(timerInterval);
+  playSound(soundTimeUp); // ⏰ play time's up sound
+  alert("⏰ Time’s up!");
+  document.getElementById("nxt-button").click();
+}
+  }, 1000);
+}
 
 function resetState() {
     nextButton.style.display = "none";
@@ -2366,31 +2412,57 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    clearInterval(timerInterval);
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if (selectedBtn.dataset.correct === "true") {
-  score++; // ✅ add this line to count correct answers
-  let reward = 10;
+    const currentQ = question[currentQuestionIndex];
+    answerSummary.push({
+    question: currentQ.question,
+    selected: selectedBtn.innerText,
+    correctAnswer: currentQ.answers.find(a => a.correct).text,
+    isCorrect: isCorrect
+});
+    if (isCorrect) {
+        playSound(soundCorrect); // ✅ play "ding" sound
 
-  // check if double coins is active
-  let doubleCoins = parseInt(localStorage.getItem("doubleCoins")) || 0;
-  if (doubleCoins > 0) {
-    reward *= 2;
-    localStorage.setItem("doubleCoins", doubleCoins - 1);
-  }
+        score++;
+        streak++;
+        if (streak % 3 === 0) {
+            coins += 5;
+            playSound(soundBonus); // 💰 play bonus sound
+            alert("🔥 Streak bonus! +5 coins");
+        }
 
-  // add coins
-  coins += reward;
-  localStorage.setItem("coins", coins);
+        // update streak counter on screen
+        const streakDisplay = document.getElementById("streakCounter");
+        if (streakDisplay) streakDisplay.textContent = `🔥 Streak: ${streak}`;
 
-  if (document.getElementById("coinCount")) {
-    document.getElementById("coinCount").textContent = coins;
-  }
-} else {
-    selectedBtn.classList.add("incorrect");
-    coins -= 7; // Subtract 7 coins for an incorrect answer
-    localStorage.setItem("coins", coins);
-    document.getElementById("coinCount").textContent = coins;
+        let reward = 10;
+
+        // check if double coins is active
+        let doubleCoins = parseInt(localStorage.getItem("doubleCoins")) || 0;
+        if (doubleCoins > 0) {
+            reward *= 2;
+            localStorage.setItem("doubleCoins", doubleCoins - 1);
+        }
+
+        // add coins
+        coins += reward;
+        localStorage.setItem("coins", coins);
+
+        if (document.getElementById("coinCount")) {
+            document.getElementById("coinCount").textContent = coins;
+        }
+    } else {
+        playSound(soundWrong); // ❌ play "buzz" sound
+
+        streak = 0;
+        const streakDisplay = document.getElementById("streakCounter");
+        if (streakDisplay) streakDisplay.textContent = `🔥 Streak: ${streak}`;
+        selectedBtn.classList.add("incorrect");
+        coins -= 7; // Subtract 7 coins for an incorrect answer
+        localStorage.setItem("coins", coins);
+        document.getElementById("coinCount").textContent = coins;
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -2400,6 +2472,7 @@ function selectAnswer(e) {
     });
     nextButton.style.display = "block";
 }
+
 function buyItem(item, cost) {
   if (coins >= cost) {
     coins -= cost;
@@ -2466,11 +2539,50 @@ function useSkip() {
 }
 
 function showScore() {
-    resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "Back";
-    nextButton.style.display = "block";
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${question.length}!`;
+
+  // make summary
+  let summaryHTML = "<h2>Answer Summary</h2><ul>";
+  answerSummary.forEach((item, i) => {
+    const resultClass = item.isCorrect ? "correct" : "incorrect";
+    summaryHTML += `
+      <li class="${resultClass}">
+        <strong>Q${i + 1}:</strong> ${item.question}<br>
+        <span>You answered:</span> ${item.selected}<br>
+        ${
+          item.isCorrect
+            ? "✅ Correct"
+            : `❌ Correct answer: <em>${item.correctAnswer}</em>`
+        }
+      </li>
+    `;
+  });
+  summaryHTML += "</ul>";
+
+  const summaryDiv = document.getElementById("summary");
+  summaryDiv.innerHTML = summaryHTML;
+  summaryDiv.style.display = "block";
+
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+  score = 0;
+  answerSummary = []; // reset for next round
+}
+
+
+document.getElementById("muteBtn").addEventListener("click", () => {
+  soundEnabled = !soundEnabled;
+  document.getElementById("muteBtn").textContent = soundEnabled ? "🔊 Sound: On" : "🔇 Sound: Off";
+});
+
+function playSound(sound) {
+  if (!soundEnabled) return; // if muted, stop
+  sound.pause();
+  sound.currentTime = 0;
+  sound.play().catch(err => {
+    console.log("Sound blocked until user interacts:", err);
+  });
 }
 
 

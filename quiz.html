@@ -13,6 +13,7 @@
 <button onclick="location.href='catagories/nhl.html'" class="btn" id="nhl-btn" hidden>NHL Trivia</button>
 <button onclick="location.href='catagories/nba.html'" class="btn" id="nba-btn" hidden>NBA Trivia</button>
 <button onclick="location.href='catagories/soccer.html'" class="btn" id="soccer-btn" hidden>Soccer Trivia</button>
+<button id="muteBtn" class="mute-btn">🔊</button>
 <div class="currency-bar">
   💰 Coins: <span id="coinCount">0</span>
 </div>
@@ -23,6 +24,9 @@
 <div class="app"> 
     <h1>Welcome to Trivia</h1>
     <div class="quiz">
+       <h3 id="questionCounter" style="text-align:center; color:black; margin-bottom:10px;">1/0</h3>
+       <h3 id="streakCounter" style="text-align:center; color:black; margin-bottom:10px;">🔥 Streak: 0</h3>
+       <h3 id="timerDisplay" style="text-align:center; color:black; margin-bottom:10px;">⏱️ Time Left: 15s</h3>
        <h2 id ="question">Question Goes Here</h2>
        <div id="answer buttons" class="btn-grid">
            <button class="btn">Answer 1</button>
@@ -31,6 +35,12 @@
            <button class="btn">Answer 4</button> 
     </div>
     <button id="nxt-button">Next Question</button>
+</div>
+<div id="summary" class="summary">
+    <h2>Quiz Summary</h2>
+    <p id="summary-text">You got X out of Y questions correct!</p>
+    <button onclick="location.href='/home.html'" class="btn">⬅ Back to Home</button>
+    <button onclick="restartQuiz()" class="btn">Restart Quiz</button>
 </div>
 <script src="script.js"></script>
 </body>
