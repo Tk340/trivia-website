@@ -20,4 +20,4 @@ Earn coins for correct answers and use them in the **store** to buy **hints**, *
 
 ---
 
-Made with ❤️ by Tarek Kanny
+Made with ❤️ by Nabil Almofti
